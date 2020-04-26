@@ -7,9 +7,7 @@
                 {{ post.published_date }}
             </div>
         {% endif %}
-        {% comment %} {% if user.is_authenticated %} {% endcomment %}
-          <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        {% comment %} {% endif %} {% endcomment %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><button class="glyphicon glyphicon-pencil">Edit</button></a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>

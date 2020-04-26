@@ -8,9 +8,7 @@
     </head>
     <body>
         <div class="page-header">
-            {% comment %} {% if user.is_authenticated %} {% endcomment %}
-              <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% comment %} {% endif %} {% endcomment %}
+            <a href="{% url 'post_new' %}" class="top-menu"><button class="glyphicon glyphicon-plus">New Post</button></a>
             <h1><a href="/">Yoonjunhyeon's Blog</a></h1>
         </div>
         <div class="content container">
